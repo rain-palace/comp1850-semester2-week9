@@ -63,14 +63,19 @@ Data *delete( List *list, int loc ) {
     Data *new = NULL;
     
     // check for empty List
+    if()
+        return;
 
     // check for invalid loc
+    if( loc>list->length || loc<0 )
+        return;
 
     // extract Data item
     
     // shuffle list down to remove the gap
 
     // decrease list length
+    list->length--;
 
     return new;
 }
