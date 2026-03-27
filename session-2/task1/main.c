@@ -14,8 +14,11 @@ int main( void ) {
 
     // add some nodes
     addNode(list,(Node *)NULL,1); // add at head - special case - pass NULL
+    addNode(list,(Node *)NULL,5);
+
 
     // display the list
+    traverseI(list->head);
 
     // add and delete more nodes with addNode() and deleteNode()
     // deallocate deleted nodes - test with valgrind to check this
